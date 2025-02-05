@@ -106,7 +106,6 @@ program continue_compilation_1
     print *, sum(arr1, dim = -1)
     print *, sum(arr1, mask = mask1, dim = 2)
     print *, sum(arr1, mask = mask1, dim = -1)
-    print *, sum([1, 2, 3], mask = [1, 2, 3])
 
     print *, product(arr2, dim = 3)
     print *, product(arr2, dim = -1)
@@ -176,4 +175,6 @@ program continue_compilation_1
     print *, product(r1)
     print *, minval(q1)
     print *, maxval(r1)
+
+    print *, sum([1, 2, 3], mask = [1, 2, 3])
 end program
